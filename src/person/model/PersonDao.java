@@ -50,19 +50,19 @@ public class PersonDao {
 	        
 	       
 	            
-	            for(int idx=0; idx < this.InfoList.size(); idx++) {
-	                PersonVo tempPersonInfo = this.InfoList.get(idx);
+	            for(int i=0; i < this.InfoList.size(); i++) {
+	                PersonVo tempPersonInfo = this.InfoList.get(i);
 	 
 	                if(num == tempPersonInfo.getNo()) {
 	                	vo.setNo(num);
 	 
 	                   
-	                    this.InfoList.remove(idx);
-	                    this.InfoList.add(idx, vo);
+	                    this.InfoList.remove(i);
+	                    this.InfoList.add(i, vo);
 	                    break;
 	                }
 	                
-	                if(idx == this.InfoList.size()-1) {
+	                if(i == this.InfoList.size()-1) {
 	                    System.out.println("오류");
 	                }
 	            }
