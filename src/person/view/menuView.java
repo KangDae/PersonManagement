@@ -1,13 +1,13 @@
 package person.view;
 
 import person.rc;
-import person.model.SaramVo;
+import person.model.PersonVo;
 
-public class menuView extends SaramView {
+public class menuView extends PersonView {
 
 	 
 	@Override
-	public SaramVo display() {
+	public PersonVo display() {
 		System.out.println(":::::메뉴:::::");
 		
 		int no;

@@ -2,17 +2,17 @@ package person.view;
 
 
 import person.model.Person_File;
-import person.model.SaramDao;
-import person.model.SaramVo;
+import person.model.PersonDao;
+import person.model.PersonVo;
 
-public class insertView extends SaramView {
+public class insertView extends PersonView {
 	
 	@Override
-	public SaramVo display() {
+	public PersonVo display() {
 		
 	System.out.println(":::::사람 정보::::");	
 	
-     SaramVo saram = new SaramVo();
+     PersonVo saram = new PersonVo();
      
      System.out.print("이름: ");
      saram.setName(scan.next()); 

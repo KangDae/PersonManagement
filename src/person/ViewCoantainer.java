@@ -1,10 +1,10 @@
 package person;
 
-import person.view.SaramView;
+import person.view.PersonView;
 
 public class ViewCoantainer {
 
-	public void run(SaramView view) {
+	public void run(PersonView view) {
 		System.out.println("============================");
 		view.display();
 		System.out.println("============================");

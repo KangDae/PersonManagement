@@ -1,12 +1,12 @@
 package person;
 
-import person.controller.Saram_controller;
+import person.controller.Person_controller;
 import person.model.Person_File;
-import person.model.SaramVo;
-import person.view.SaramDelete;
-import person.view.SaramEdit;
-import person.view.SaramListView;
-import person.view.SaramView;
+import person.model.PersonVo;
+import person.view.PersonDelete;
+import person.view.PersonEdit;
+import person.view.PersonListView;
+import person.view.PersonView;
 import person.view.insertView;
 import person.view.menuView;
 
@@ -15,21 +15,15 @@ import person.view.menuView;
 
 public class rc {
 	public static int no;
-	public static SaramVo saramvo;
-	public static SaramVo[] saramArr;
 	public static Person_File personfile;
-	
-	
-	public static int type = 0;
-
-	
-	public static final SaramView menuView = new menuView();
-	public static final SaramView insertView = new insertView();
-	public static final SaramView saramDelete = new SaramDelete();
-	public static final SaramView saramEdit = new SaramEdit();
-	public static final SaramView saramListView = new SaramListView();
+		
+	public static final PersonView menuView = new menuView();
+	public static final PersonView insertView = new insertView();
+	public static final PersonView PersonDelete = new PersonDelete();
+	public static final PersonView PersonEdit = new PersonEdit();
+	public static final PersonView PersonListView = new PersonListView();
 	
 
-	public static final Saram_controller samramController = new Saram_controller();
+	public static final Person_controller PersonController = new Person_controller();
 
 }

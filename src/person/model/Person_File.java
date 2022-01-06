@@ -19,12 +19,12 @@ public class Person_File {
 	public static String filepath = "c:\\save\\";
     public static String filename = "savedata.txt";
 
-	public static List<SaramVo> readFile(File file) throws IOException {
+	public static List<PersonVo> readFile(File file) throws IOException {
 		
 		
 		FileReader fileReader = null;
 		
-		List<SaramVo> listInfo = new ArrayList<SaramVo>();
+		List<PersonVo> listInfo = new ArrayList<PersonVo>();
 
 		try {
 			fileReader = new FileReader(file);
@@ -38,13 +38,13 @@ public class Person_File {
 	}
 	
 
-	public static List<SaramVo> readReader(Reader input) throws IOException {
+	public static List<PersonVo> readReader(Reader input) throws IOException {
 		try {
 			
 			BufferedReader bufferedRead = new BufferedReader(input);
 			String line;
 
-			List<SaramVo> InfoList = new ArrayList<SaramVo>();
+			List<PersonVo> InfoList = new ArrayList<PersonVo>();
 
 			
 			while ((line = bufferedRead.readLine()) != null) {
@@ -55,7 +55,7 @@ public class Person_File {
 				if (writeStr.length != 4)
 					continue;
 
-				SaramVo saramVo = new SaramVo();
+				PersonVo saramVo = new PersonVo();
 
 				
 				saramVo.setNo(Integer.parseInt(writeStr[0]));
@@ -72,7 +72,7 @@ public class Person_File {
 		}
 	}
 	
-	   public static void writeFile(List<SaramVo> InfoList ) throws IOException {
+	   public static void writeFile(List<PersonVo> InfoList ) throws IOException {
 	        OutputStream outputStream = null;
 	        try {
 	            File dirent = new File(filepath);
