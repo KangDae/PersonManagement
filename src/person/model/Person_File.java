@@ -88,8 +88,10 @@ public class Person_File {
 			outputStream = new BufferedOutputStream(new FileOutputStream(outFile));
 			for (int i = 0; i < InfoList.size(); i++) {
 
-				String writeStr = InfoList.get(i).getNo() + "," + InfoList.get(i).getName() + ","
-						+ InfoList.get(i).getPhone() + "," + InfoList.get(i).getEmail() + "\n";
+				String writeStr = InfoList.get(i).getNo() + "," 
+                                                + InfoList.get(i).getName() + ","
+						+ InfoList.get(i).getPhone() + "," 
+                                                + InfoList.get(i).getEmail() + "\n";
 
 				byte[] b = writeStr.getBytes();
 
