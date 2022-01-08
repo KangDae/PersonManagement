@@ -45,22 +45,22 @@ public class Person_File {
 
 			while ((line = bufferedRead.readLine()) != null) {
 
-				String[] writeStr = line.split(",");
+				String[] str = line.split(",");
 
 				if (writeStr.length != 4)
 					continue;
 
-				PersonVo saramVo = new PersonVo();
+				PersonVo personVo = new PersonVo();
 
-				saramVo.setNo(Integer.parseInt(writeStr[0]));
+				personVo.setNo(Integer.parseInt(str[0]));
 
-				saramVo.setName((writeStr[1]));
+				personVo.setName((str[1]));
 
-				saramVo.setPhone((writeStr[2]));
+				personVo.setPhone((str[2]));
 
-				saramVo.setEmail((writeStr[3]));
+				personVo.setEmail((str[3]));
 
-				InfoList.add(saramVo);
+				InfoList.add(personVo);
 			}
 
 			return InfoList;
