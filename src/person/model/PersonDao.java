@@ -51,7 +51,11 @@ public class PersonDao {
 	       
 	            
 	            for(int i=0; i < this.InfoList.size(); i++) {
+
 	                PersonVo temp = this.InfoList.get(i);
+
+	                PersonVo tempPersonInfo = this.InfoList.get(i);
+
 	 
 	                if(num == temp.getNo()) {
 	                	vo.setNo(num);
