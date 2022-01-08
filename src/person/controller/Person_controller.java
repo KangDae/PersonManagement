@@ -15,8 +15,12 @@ public class Person_controller {
 	
 
 	public void action() throws IOException {
+		
+		if(rc.fileno==0)
+		rc.personfile.createFile();
+		
 		if (rc.no == 0) {
-			vc.run(rc.menuView); // 
+			vc.run(rc.menuView); 
 		}
 		switch (rc.no) {
 		case 1://입력

@@ -15,7 +15,8 @@ import person.view.menuView;
 
 public class rc {
 	public static int no;
-	public static Person_File personfile;
+	public static int fileno =0;
+	public static Person_File personfile = new Person_File();
 		
 	public static final PersonView menuView = new menuView();
 	public static final PersonView insertView = new insertView();

@@ -1,8 +1,6 @@
 package person.view;
 
 
-import person.model.Person_File;
-import person.model.PersonDao;
 import person.model.PersonVo;
 
 public class insertView extends PersonView {
@@ -12,18 +10,18 @@ public class insertView extends PersonView {
 		
 	System.out.println(":::::사람 정보::::");	
 	
-     PersonVo saram = new PersonVo();
+     PersonVo person = new PersonVo();
      
      System.out.print("이름: ");
-     saram.setName(scan.next()); 
+     person.setName(scan.next()); 
      System.out.println();
 
      System.out.print("전화 번호: ");
-     saram.setPhone(scan.next());
+     person.setPhone(scan.next());
      System.out.println();
 
      System.out.print("email  : ");
-     saram.setEmail(scan.next());
+     person.setEmail(scan.next());
 
      System.out.println();
 
@@ -32,7 +30,7 @@ public class insertView extends PersonView {
 	
 	
 	
-	return saram;
+	return person;
 	}
 
 	

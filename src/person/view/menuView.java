@@ -14,7 +14,7 @@ public class menuView extends PersonView {
 		while (true) {
 			try {
 				System.out.println("1.입력(Create) 2.출력(Read) 3.수정(Update) 4.삭제(delete) 5.종료");
-				System.out.print("����:");
+				System.out.print("입력:");
 				 no = scan.nextInt();
 
 				while (no > 5 || no < 1) {
